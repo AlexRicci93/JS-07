@@ -19,18 +19,11 @@ const persons = [
 
 
 
- const nick_names = persons.forEach( element =>  {
-  return  element.name + element.age;
-  /*console.log(element.name + element.age); */   /* tramite questo console.log funziona*/
-  }
-
-  );
+let nick_names = persons.map(item => item.name + '-' + item.age);
 
   
   
 
 
 console.log(persons);
-console.log(nick_names); /* in console log "nick_names" appare indefinito, ma il codice sembra essere corretto,
-visto che la variabile nick_names è stata dichiarata alla riga n.22 */ 
-
+console.log(nick_names); 
